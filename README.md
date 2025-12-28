@@ -1,21 +1,26 @@
-📌 Project Overview
+# Object Classification with PyTorch
 
-This project implements an image classification pipeline using PyTorch and a ResNet-18 backbone. The model is trained on a custom dataset with 8 classes, leveraging extensive data augmentation (random flips, rotations, affine transforms, color jitter, Gaussian blur, noise, random erasing) to improve generalization.
+This project implements an image classification pipeline using PyTorch and a ResNet-18 backbone on a custom dataset with 8 classes. Data augmentation techniques are applied to improve model generalization.
 
-The training loop includes:
+## Objective
+Train a deep learning model to classify images into 8 categories while ensuring model interpretability and robustness.
 
-Cross-entropy loss for multi-class classification.
+## Tools & Technologies
+- Python, PyTorch  
+- Jupyter Notebooks  
+- Data augmentation: random flips, rotations, affine transforms, color jitter, Gaussian blur, noise, random erasing  
+- Grad-CAM for model interpretability  
 
-Adam optimizer with learning rate scheduling and early stopping.
+## Training & Evaluation
+- **Training:** Cross-entropy loss, Adam optimizer, learning rate scheduling, early stopping  
+- **Validation:** Monitor accuracy and loss on validation split  
+- **Checkpointing:** Save best model weights  
+- **Testing:** Evaluate on test set and export predictions to CSV  
 
-Train/validation split with monitoring of accuracy and loss.
+## Model Interpretability
+- Grad-CAM visualizations highlight image regions most influencing model decisions, supporting explainable AI.
 
-Model checkpointing to save the best weights.
+## Key Takeaway
+This project demonstrates practical skills in deep learning, model training, evaluation, and interpretability techniques, applied to real-world image classification problems.
 
-After training, the pipeline supports:
-
-Evaluation on the test set and CSV export of predictions.
-
-Grad-CAM visualizations to interpret the model’s decisions and highlight the most important image regions influencing predictions.
-
-This combination of training, validation, testing, and interpretability ensures both performance and explainability of the deep learning model.
+<img width="551" height="568" alt="Screenshot 2025-12-28 112008" src="https://github.com/user-attachments/assets/b5c98bcb-d864-4bb6-90dd-4219a182616e" />
